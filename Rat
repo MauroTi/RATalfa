@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="container">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rat</title>
+  
+  <link href="logo.css" rel="">
+</head>
+<body>
+ Ordem de serviço
+ Data 
+ Hora 
+ Número
+ Contrato
+ Garantia
+ Eventual a pagar
+ Demonstração
+ Número da ocorrência
+ Razão Social
+ Endereço
+ Cidade
+ CEP
+ CNPJ
+ Telefone
+ Inscrição estadual
+ Usuário 
+ Nome
+ Email
+ Sala/Andar
+ Telefone
+ Equipamento
+ Marca 
+ Modelo
+ Série
+ Patrimônio
+ Atendimento
+ Data
+ Início
+ Término
+ Série Correta
+ Patrimônio Correto
+ Defeito Relatado
+ Defeito Constatado
+ Solução
+ Equipamento Parado
+ Equipamento Funcionando c/ Pendência
+ Equipamento OK
+ Informar Pendência
+ OBS
+ Cliente Solicita Equip. Substituto
+ Cliente Não Necessita Equip. Substituto
+ Instalado Equipamento Substituto
+ BKP
+ Nome do Cliente
+ Assinatura do Cliente
+ 
+
+
+</body>
+
+</body>
+</html>
