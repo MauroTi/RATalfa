@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html class="container">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,10 +54,247 @@
  BKP
  Nome do Cliente
  Assinatura do Cliente
- 
+ Tipo de Intervenção
+ Manutenção Corretiva
+ Manutenção Preventiva
+ Instalação de Equipamento
+ Remoção de Equipamento
+ Peças Aplicadas
+ Quantidade
+ Código
+ Descrição
+ Valor Total
+ Total Geral
+ Número NF
+ Total Geral
+ Serviço de Laboratório
+ Número de Horas
+ R$
+ Técnico
+ Nome
+ Assinatura
+ Cliente
+ Contato
+ Assinatura/Carimbo
 
 
 </body>
 
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Ordem de Serviço</title>
+</head>
+<body>
+    <h1>Ordem de Serviço</h1>
+    <form action="processar.php" method="post">
+        <h2>Dados da Ordem de Serviço</h2>
+        <label for="numero_os">Número da Ordem de Serviço:</label>
+        <input type="text" id="numero_os" name="numero_os" required><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+
+        <label for="numero_contrato">Número do Contrato:</label>
+        <input type="text" id="numero_contrato" name="numero_contrato"><br>
+
+        <label for="garantia">Garantia:</label>
+        <input type="text" id="garantia" name="garantia"><br>
+
+        <label for="eventual_pagar">Eventual a Pagar:</label>
+        <input type="text" id="eventual_pagar" name="eventual_pagar"><br>
+
+        <label for="demonstracao">Demonstração:</label>
+        <input type="text" id="demonstracao" name="demonstracao"><br>
+
+        <label for="numero_ocorrencia">Número da Ocorrência:</label>
+        <input type="text" id="numero_ocorrencia" name="numero_ocorrencia"><br>
+
+        <h2>Informações do Cliente</h2>
+        <label for="razao_social">Razão Social:</label>
+        <input type="text" id="razao_social" name="razao_social" required><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required><br>
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required><br>
+
+        <label for="telefone_cliente">Telefone:</label>
+        <input type="tel" id="telefone_cliente" name="telefone_cliente" required><br>
+
+        <label for="inscricao_estadual">Inscrição Estadual:</label>
+        <input type="text" id="inscricao_estadual" name="inscricao_estadual"><br>
+
+        <h2>Informações do Usuário</h2>
+        <label for="nome_usuario">Nome:</label>
+        <input type="text" id="nome_usuario" name="nome_usuario" required><br>
+
+        <label for="email_usuario">Email:</label>
+        <input type="email" id="email_usuario" name="email_usuario" required><br>
+
+        <label for="sala_andar">Sala/Andar:</label>
+        <input type="text" id="sala_andar" name="sala_andar"><br>
+
+        <label for="telefone_usuario">Telefone:</label>
+        <input type="tel" id="telefone_usuario" name="telefone_usuario"><br>
+
+        <!-- Adicione aqui os campos restantes do formulário -->
+                <h2>Equipamento</h2>
+        <label for="tipo_equipamento">Tipo de Equipamento:</label>
+        <input type="text" id="tipo_equipamento" name="tipo_equipamento" required><br>
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required><br>
+
+        <label for="serie">Série:</label>
+        <input type="text" id="serie" name="serie" required><br>
+
+        <label for="patrimonio">Patrimônio:</label>
+        <input type="text" id="patrimonio" name="patrimonio" required><br>
+
+        <h2>Atendimento</h2>
+        <label for="data_atendimento">Data de Atendimento:</label>
+        <input type="date" id="data_atendimento" name="data_atendimento" required><br>
+
+        <label for="hora_inicio">Hora de Início:</label>
+        <input type="time" id="hora_inicio" name="hora_inicio" required><br>
+
+        <label for="hora_termino">Hora de Término:</label>
+        <input type="time" id="hora_termino" name="hora_termino" required><br>
+
+        <label for="serie_correta">Série Correta:</label>
+        <input type="text" id="serie_correta" name="serie_correta" required><br>
+
+        <label for="patrimonio_correto">Patrimônio Correto:</label>
+        <input type="text" id="patrimonio_correto" name="patrimonio_correto" required><br>
+
+        <label for="defeito_relatado">Defeito Relatado:</label>
+        <textarea id="defeito_relatado" name="defeito_relatado" rows="4" required></textarea><br>
+
+        <label for="defeito_constatado">Defeito Constatado:</label>
+        <textarea id="defeito_constatado" name="defeito_constatado" rows="4" required></textarea><br>
+
+        <label for="solucao">Solução:</label>
+        <textarea id="solucao" name="solucao" rows="4" required></textarea><br>
+
+        <h2>Estado do Equipamento</h2>
+        <label>Estado do Equipamento:</label><br>
+        <input type="radio" id="equipamento_parado" name="estado_equipamento" value="Equipamento Parado">
+        <label for="equipamento_parado">Equipamento Parado</label><br>
+
+        <input type="radio" id="equipamento_com_pendencia" name="estado_equipamento" value="Equipamento Funcionando com Pendência">
+        <label for="equipamento_com_pendencia">Equipamento Funcionando com Pendência</label><br>
+
+        <input type="radio" id="equipamento_ok" name="estado_equipamento" value="Equipamento OK">
+        <label for="equipamento_ok">Equipamento OK</label><br>
+
+        <input type="radio" id="informar_pendencia" name="estado_equipamento" value="Informar Pendência">
+        <label for="informar_pendencia">Informar Pendência</label><br>
+
+        <input type="radio" id="cliente_solicita_substituto" name="estado_equipamento" value="Cliente Solicita Equipamento Substituto">
+        <label for="cliente_solicita_substituto">Cliente Solicita Equipamento Substituto</label><br>
+
+        <input type="radio" id="cliente_nao_necessita_substituto" name="estado_equipamento" value="Cliente Não Necessita Equipamento Substituto">
+        <label for="cliente_nao_necessita_substituto">Cliente Não Necessita Equipamento Substituto</label><br>
+
+        <input type="radio" id="instalado_substituto" name="estado_equipamento" value="Instalado Equipamento Substituto">
+        <label for="instalado_substituto">Instalado Equipamento Substituto</label><br>
+
+        <h2>BKP (Backup)</h2>
+        <label for="nome_cliente_bkp">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente_bkp" name="nome_cliente_bkp"><br>
+
+        <label for="assinatura_cliente_bkp">Assinatura do Cliente:</label>
+        <input type="text" id="assinatura_cliente_bkp" name="assinatura_cliente_bkp"><br>
+
+        <label>Tipo de Intervenção:</label><br>
+        <input type="radio" id="manutencao_corretiva" name="tipo_intervencao" value="Manutenção Corretiva">
+        <label for="manutencao_corretiva">Manutenção Corretiva</label><br>
+
+        <input type="radio" id="manutencao_preventiva" name="tipo_intervencao" value="Manutenção Preventiva">
+        <label for="manutencao_preventiva">Manutenção Preventiva</label><br>
+
+        <input type="radio" id="instalacao_equipamento" name="tipo_intervencao" value="Instalação de Equipamento">
+        <label for="instalacao_equipamento">Instalação de Equipamento</label><br>
+
+        <input type="radio" id="remocao_equipamento" name="tipo_intervencao" value="Remoção de Equipamento">
+        <label for="remocao_equipamento">Remoção de Equipamento</label><br>
+
+        <!-- Adicione aqui os campos restantes do formulário -->
+                <h2>Peças Aplicadas</h2>
+        <label for="quantidade">Quantidade:</label>
+        <input type="text" id="quantidade" name="quantidade"><br>
+
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo"><br>
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao"><br>
+
+        <label for="valor_total">Valor Total:</label>
+        <input type="text" id="valor_total" name="valor_total"><br>
+
+        <h2>Total Geral</h2>
+        <label for="numero_nf">Número da Nota Fiscal:</label>
+        <input type="text" id="numero_nf" name="numero_nf"><br>
+
+        <label for="total_geral">Total Geral:</label>
+        <input type="text" id="total_geral" name="total_geral"><br>
+
+        <h2>Serviço de Laboratório</h2>
+        <label for="numero_horas">Número de Horas:</label>
+        <input type="text" id="numero_horas" name="numero_horas"><br>
+
+        <label for="valor_servico_lab">Valor (R$):</label>
+        <input type="text" id="valor_servico_lab" name="valor_servico_lab"><br>
+
+        <h2>Técnico</h2>
+        <label for="nome_tecnico">Nome do Técnico:</label>
+        <input type="text" id="nome_tecnico" name="nome_tecnico"><br>
+
+        <label for="assinatura_tecnico">Assinatura do Técnico:</label>
+        <input type="text" id="assinatura_tecnico" name="assinatura_tecnico"><br>
+
+        <h2>Cliente</h2>
+        <label for="contato_cliente">Contato:</label>
+        <input type="text" id="contato_cliente" name="contato_cliente"><br>
+
+        <label for="assinatura_cliente">Assinatura/Carimbo do Cliente:</label>
+        <input type="text" id="assinatura_cliente" name="assinatura_cliente"><br>
+
+        <!-- Adicione aqui os campos restantes do formulário -->
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
