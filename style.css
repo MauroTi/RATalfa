@@ -1,0 +1,72 @@
+/* Estilo para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o cabeçalho (h1) */
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+/* Estilo para os títulos de seção (h2) */
+h2 {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+/* Estilo para os rótulos dos campos de entrada (label) */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo para os campos de entrada de texto (input[type="text"], input[type="email"], input[type="tel"], textarea) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para os campos de entrada de data e hora (input[type="date"], input[type="time"]) */
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para os campos de entrada de radio (input[type="radio"]) */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Estilo para o botão de envio (input[type="submit"]) */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão de envio quando hover (hover) */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
