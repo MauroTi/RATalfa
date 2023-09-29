@@ -208,29 +208,44 @@
         </div>
         <div>
           <div class="form-block">
-          <h2>Estado do Equipamento</h2>
-          <label>Estado do Equipamento:</label><br>
-          <input type="radio" id="equipamento_parado" name="estado_equipamento" value="Equipamento Parado">
-          <label for="equipamento_parado">Equipamento Parado</label><br>
+  <h2>Estado do Equipamento</h2>
 
-          <input type="radio" id="equipamento_com_pendencia" name="estado_equipamento" value="Equipamento Funcionando com Pendência">
-          <label for="equipamento_com_pendencia">Equipamento Funcionando com Pendência</label><br>
+  <div class="label-input-pair">
+    <input type="radio" id="equipamento_parado" name="estado_equipamento" value="Equipamento Parado">
+    <label for="equipamento_parado">Equipamento Parado</label>
+  </div>
 
-          <input type="radio" id="equipamento_ok" name="estado_equipamento" value="Equipamento OK">
-          <label for="equipamento_ok">Equipamento OK</label><br>
+  <div class="label-input-pair">
+    <input type="radio" id="equipamento_com_pendencia" name="estado_equipamento" value="Equipamento Funcionando com Pendência">
+    <label for="equipamento_com_pendencia">Equipamento Funcionando com Pendência</label>
+  </div>
 
-          <input type="radio" id="informar_pendencia" name="estado_equipamento" value="Informar Pendência">
-          <label for="informar_pendencia">Informar Pendência</label><br>
+  <div class="label-input-pair">
+    <input type="radio" id="equipamento_ok" name="estado_equipamento" value="Equipamento OK">
+    <label for="equipamento_ok">Equipamento OK</label>
+  </div>
 
-          <input type="radio" id="cliente_solicita_substituto" name="estado_equipamento" value="Cliente Solicita Equipamento Substituto">
-          <label for="cliente_solicita_substituto">Cliente Solicita Equipamento Substituto</label><br>
+  <div class="label-input-pair">
+    <input type="radio" id="informar_pendencia" name="estado_equipamento" value="Informar Pendência">
+    <label for="informar_pendencia">Informar Pendência</label>
+  </div>
 
-          <input type="radio" id="cliente_nao_necessita_substituto" name="estado_equipamento" value="Cliente Não Necessita Equipamento Substituto">
-          <label for="cliente_nao_necessita_substituto">Cliente Não Necessita Equipamento Substituto</label><br>
+  <div class="label-input-pair">
+    <input type="radio" id="cliente_solicita_substituto" name="estado_equipamento" value="Cliente Solicita Equipamento Substituto">
+    <label for="cliente_solicita_substituto">Cliente Solicita Equipamento Substituto</label>
+  </div>
 
-          <input type="radio" id="instalado_substituto" name="estado_equipamento" value="Instalado Equipamento Substituto">
-          <label for="instalado_substituto">Instalado Equipamento Substituto</label><br>
+  <div class="label-input-pair">
+    <input type="radio" id="cliente_nao_necessita_substituto" name="estado_equipamento" value="Cliente Não Necessita Equipamento Substituto">
+    <label for="cliente_nao_necessita_substituto">Cliente Não Necessita Equipamento Substituto</label>
+  </div>
+
+  <div class="label-input-pair">
+    <input type="radio" id="instalado_substituto" name="estado_equipamento" value="Instalado Equipamento Substituto">
+    <label for="instalado_substituto">Instalado Equipamento Substituto</label>
+  </div>
 </div>
+
 <div class="form-block">
           <h2>BKP (Backup)</h2>
           <label for="nome_cliente_bkp">Nome do Cliente:</label>
@@ -268,20 +283,20 @@
           <input type="text" id="valor_total" name="valor_total"><br>
 </div>
 <div class="form-block">
-          <h2>Total Geral</h2>
-          <label for="numero_nf">Número da Nota Fiscal:</label>
-          <input type="text" id="numero_nf" name="numero_nf"><br>
-
-          <label for="total_geral">Total Geral:</label>
-          <input type="text" id="total_geral" name="total_geral"><br>
-</div>
-<div class="form-block">
           <h2>Serviço de Laboratório</h2>
           <label for="numero_horas">Número de Horas:</label>
           <input type="text" id="numero_horas" name="numero_horas"><br>
 
           <label for="valor_servico_lab">Valor (R$):</label>
           <input type="text" id="valor_servico_lab" name="valor_servico_lab"><br>
+</div>
+<div class="form-block">
+          <h2>Total Geral</h2>
+          <label for="numero_nf">Número da Nota Fiscal:</label>
+          <input type="text" id="numero_nf" name="numero_nf"><br>
+
+          <label for="total_geral">Total Geral:</label>
+          <input type="text" id="total_geral" name="total_geral"><br>
 </div>
 <div class="form-block">
           <h2>Técnico</h2>
@@ -302,8 +317,9 @@
         </div>
       </div>
       <!-- Adicione aqui os campos restantes do formulário -->
-
+<div class="div-contain-button">
       <input type="submit" value="Enviar">
+      </div>
     </form>
   </div>
 </body>
